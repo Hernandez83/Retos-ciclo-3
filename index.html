@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>IMC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <img class="alinear" src="img/logo.png" alt="Logo" title="Logo">
+            <nav class="alinear">
+                <ul>
+                    <li class="alinear margeniz">
+                        <a href="/">Inicio</a>
+                    </li>
+                    <li class="alinear">
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="alinear">
+                        <button>Iniciar sesión</button>
+                    </li>
+                    <li class="alinear">
+                        <button>Crear cuenta</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="cajas">
+            <div class="contenedor conprom">
+                <img class="flotante" src="img/gorditos.png" alt="" title="">
+                <h1>¿Ya tienes tu IMC?</h1>
+                <h2>¡Tu índice de masa corporal adecuado!</h2>
+                <a href="#h3">Calculadora de IMC</a>
+            </div>
+        </div>
+    </header>
+    <article>
+            <div class="contenedor">
+                <h3 id="h3">Calculadora de IMC</h3>
+                <form action="">
+                    <ul>
+                        <li>
+                            <div class="circulos">1</div>
+                            <h4>¿Cuál es tu género?</h4>
+                            <div class="genero">
+                                <div>
+                                    <img src="img/machos.svg" alt="" title="">
+                                    <span>Hombre</span>
+                                </div>
+                                <div>
+                                    <img src="img/hembra.svg" alt="" title="">
+                                    <span>Mujer</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="circulos">2</div>
+                            <h4>¿Cuántos años tienes?</h4>
+                            <input type="number" id="años" name="cuantos_años" required placeholder="21">
+                            <label for="años">años</label>
+                        </li><br>
+                        <li>
+                            <div class="circulos">3</div>
+                            <h4>¿Cuánto mides?</h4>
+                            <input type="number" id="mides" name="cuanto_mides" required placeholder="170">
+                            <label for="mides">cm</label>
+                        </li>
+                        <li>
+                            <div class="circulos">4</div>
+                            <h4>¿Cuánto pesas?</h4>
+                            <input type="number" id="pesas" name="cuanto_pesas" required placeholder="69">
+                            <label for="pesas">kg</label>
+                        </li>
+                        <button type="submit">Calcular</button>
+                    </ul>
+                </form>
+            </div>
+    </article>
+    <footer class="cajas">
+        <div class="contenedor">
+            <img src="https://www.utp.edu.co/cms-utp/data/bin/UTP/web/uploads/media/comunicaciones/img/Logo-MisionTIC-2022.jpg" alt="Mision TIC 2022" title="Mision TIC 2022">
+            <img class="logopyeye" src="img/logo_negro_grupo_1_sin_fondo.png" alt="" title="">
+            <img src="https://www.unab.edu.co/sites/default/files/1-LOGO-WEB_0.png" alt="unab" title="unab">
+        </div>
+    </footer>
+</body>
+
+</html>

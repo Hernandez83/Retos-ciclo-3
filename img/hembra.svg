@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" viewBox="0 0 96 96">
+        <defs>
+            <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+                <stop stop-color="#B0C3CB" offset="0%"/>
+                <stop stop-color="#78909C" offset="100%"/>
+            </linearGradient>
+            <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+                <stop stop-color="#FF9047" offset="0%"/>
+                <stop stop-color="#FF5722" offset="100%"/>
+            </linearGradient>
+        </defs>
+        <g id="icon-female" class="icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <rect id="Rectangle" x="0" y="0" width="96" height="96"/>
+            <g id="icons8-businesswoman" transform="translate(16.000000, 8.000000)" fill-rule="nonzero">
+                <polygon id="Path" fill="#BF360C" points="16 22 48 22 48 58 16 58"/>
+                <path d="M64,80 L0,80 C0,58 22,54 22,54 L42,54 C42,54 64,58 64,80 Z" id="Path" fill="url(#linearGradient-1)"/>
+                <path d="M32,66 C27.601562,66 22,54 22,54 L22,42 L42,42 L42,54 C42,54 36.398438,66 32,66 Z" id="Path" fill="#FF9800"/>
+                <path d="M50,20 C50,4.796876 14,10 14,20 C14,22.203126 14,31.796876 14,34 C14,44 22,52 32,52 C42,52 50,44 50,34 C50,31.796876 50,22.203126 50,20 Z" id="Path" fill="#FFB74D"/>
+                <path d="M32,0 C19.796876,0 2,6.796876 2,46.601562 L16,56 L16,30 L40,16 L48,26 L48,56 L62,44 C62,36 60.601562,4 40,4 L38,0 L32,0 Z" id="Path" fill="url(#linearGradient-2)"/>
+                <path d="M32,68 C23.203126,68 22,54 22,54 C22,54 27,62 32,62 C37,62 42,54 42,54 C42,54 40.796876,68 32,68 Z" id="Path" fill="#FFB74D"/>
+                <path d="M42,34 C42,35.101562 41.101562,36 40,36 C38.898438,36 38,35.101562 38,34 C38,32.898438 38.898438,32 40,32 C41.101562,32 42,32.898438 42,34 Z" id="Path" fill="#784719"/>
+                <path d="M26,34 C26,35.101562 25.101562,36 24,36 C22.898438,36 22,35.101562 22,34 C22,32.898438 22.898438,32 24,32 C25.101562,32 26,32.898438 26,34 Z" id="Path" fill="#784719"/>
+            </g>
+            <path d="M44,52 C44.4726978,53.1517541 46.0861163,54 48.0037631,54 C49.9113594,54 51.517908,53.1606223 52,52.0180843" id="Path" stroke="#784719" stroke-linecap="round"/>
+        </g>
+    </svg>

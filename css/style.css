@@ -1,0 +1,200 @@
+body {
+    color: #353752;
+    font-family: 'DM Serif Display', serif;
+    margin: 0;
+    text-align: center;
+}
+
+a, button {
+    background: none;
+    color: #353752;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+a:hover, button:hover {
+    color: #8588ab;
+}
+
+/* header {
+    height: 100vh;
+} */
+
+.menu img {
+    left: 0;
+    max-width: 200px;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav button {
+    background-color: #ffb300;
+    border: none;
+    border-radius: 5px;
+    color: #353752;
+    padding: 5px 10px;
+    box-shadow: 0 0 10px 0px rgb(183 185 210);
+}
+
+.alinear, form li, .genero div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.margeniz {
+    margin-left: 0;
+}
+
+.menu {
+    box-shadow: 0 0 20px 0px rgb(183, 185, 210);
+    padding: 1em 3em;
+    text-align-last: justify;
+}
+
+.cajas, article {
+    background-image: url(../img/fondo_vecotr_amarillo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+}
+
+.contenedor {
+    background-color: white;
+    border-radius: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.flotante {
+    max-width: 500px;
+    position: absolute;
+    right: 150px;
+    top: 150px;
+}
+
+.conprom {
+    box-shadow: 0px 0px 15px 0px rgb(119 122 157);
+    max-width: 1000px;
+    padding: 4em 2em;
+}
+
+h1, h2, .conprom a {
+    display: block;
+    text-align: left;
+}
+
+h1 {
+    margin: 0;
+    font-size: 70px;
+    line-height: 1.2em;
+}
+
+h2, h3 {
+    color: #ffb300;
+    font-family: 'Sue Ellen Francisco',handwriting;
+    font-size: 40px;
+    margin-bottom: 1em;
+}
+
+h1, h2 {
+    max-width: 70%;
+}
+
+.conprom a {
+    background-color: #353752;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px rgb(119 122 157);
+    color: white;
+    font-size: 20px;
+    padding: 15px 20px;
+    width: 230px;
+}
+
+article {
+    background-image: none;
+}
+
+h3 {
+    color: #353752;
+}
+
+form li {
+    border: solid 1px #353752;
+    border-radius: 15px;
+    height: 150px;
+    margin: 20px;
+    padding: 2em;
+    width: 200px;
+}
+
+.genero div {
+    cursor: pointer;
+}
+
+.genero img {
+    width: 72px;
+}
+
+.genero span {
+    display: block;
+}
+
+form button {
+    background-color: #353752;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px rgb(119 122 157);
+    color: white;
+    display: block;
+    font-size: 20px;
+    padding: 15px 20px;
+    width: 230px;
+    margin: 30px auto 0;
+}
+
+.circulos {
+    border: solid 1px #353752;
+    background-color: #353752;
+    border-radius: 50%;
+    color: white;
+    height: 20px;
+    margin: -50px auto 0;
+    padding: 4px 5px 5px;
+    width: 20px;
+}
+
+form input {
+    border: 0;
+    border-bottom: solid 2px #bbbbbb;
+    font-size: 28px;
+    margin-top: 30px;
+    text-align: center;
+    width: 70px;
+}
+
+form h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer div {
+    padding: 4em 2em;
+}
+
+footer img {
+    height: 70px;
+}
+
+.logopyeye {
+    margin-left: 20px;
+    margin-right: 20px;
+}
