@@ -10,9 +10,7 @@
     <title>IMC</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -28,13 +26,40 @@
                         <a href="nosotros.html">Nosotros</a>
                     </li>
                     <li class="alinear">
-                        <button>Iniciar sesión</button>
+                        <button id="login">Iniciar sesión</button>
                     </li>
                     <li class="alinear">
-                        <button>Crear cuenta</button>
+                        <button id="crearcta">Crear cuenta</button>
                     </li>
                 </ul>
             </nav>
+        </div>
+        <div class="bgModal" id="inisesion">
+            <div class="mainModal">
+                <span class="cerrar">X</span><br>
+                <form>
+                    <h3>Inicia Sesión</h3>
+                    <input type="text" name="usuario" required placeholder="Usuario">
+                    <input type="password" name="contraseña" required placeholder="Contraseña">
+                    <button type="submit">Iniciar</button>
+                    <button class="miniBoton" id="recucontra">Olvide mi contraseña</button>
+                    <button class="miniBoton" id="pascrear">Crear cuenta</button>
+                </form>
+            </div>
+        </div>
+        <div class="bgModal" id="registrar">
+            <div class="mainModal">
+                <span class="cerrar">X</span><br>
+                <form>
+                    <h3>Crear Cuenta</h3>
+                    <input type="text" name="nombre" required placeholder="Nombre">
+                    <input type="email" name="email" required placeholder="Correo">
+                    <input type="password" name="confirmarcontraseña" required placeholder="Contraseña">
+                    <input type="password" name="confirmarcontraseña" required placeholder="Confirmar">
+                    <button type="submit">Crear</button>
+                    <button class="miniBoton" id="pasloging">Inicia sesión</button>
+                </form>
+            </div>
         </div>
         <div class="cajas">
             <div class="contenedor conprom">
@@ -54,20 +79,20 @@
                             <div class="circulos">1</div>
                             <h4>¿Cuál es tu género?</h4>
                             <div class="genero">
-                                <div>
+                                <div class="generoselec">
                                     <img src="img/machos.svg" alt="" title="">
-                                    <span>Hombre</span>
+                                    <span name="hombre">Hombre</span>
                                 </div>
-                                <div>
+                                <div class="generoselec">
                                     <img src="img/hembra.svg" alt="" title="">
-                                    <span>Mujer</span>
+                                    <span name="mujer">Mujer</span>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="circulos">2</div>
                             <h4>¿Cuántos años tienes?</h4>
-                            <input type="number" id="años" name="cuantos_años" required placeholder="21">
+                            <input type="number" id="anos" name="cuantos_años" required placeholder="21">
                             <label for="años">años</label>
                         </li><br>
                         <li>
@@ -82,7 +107,7 @@
                             <input type="number" id="pesas" name="cuanto_pesas" required placeholder="69">
                             <label for="pesas">kg</label>
                         </li>
-                        <button type="submit">Calcular</button>
+                        <button id="Calcular">Calcular</button>
                     </ul>
                 </form>
             </div>
@@ -94,6 +119,7 @@
             <img src="https://www.unab.edu.co/sites/default/files/1-LOGO-WEB_0.png" alt="unab" title="unab">
         </div>
     </footer>
+    <script src="js/js.js"></script>
 </body>
 
 </html>

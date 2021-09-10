@@ -8,6 +8,7 @@ body {
 a, button {
     background: none;
     color: #353752;
+    cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -145,7 +146,11 @@ form li {
 }
 
 .genero span {
+    border-radius: 10px;
     display: block;
+    font-family: 'Poppins', sans-serif;
+    min-width: 76px;
+    padding-bottom: 2px;
 }
 
 form button {
@@ -197,4 +202,76 @@ footer img {
 .logopyeye {
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.bgModal {
+    align-items: center;
+    background: rgba(122, 95, 95, 0.5);
+    color: white;
+    display: flex;
+    height: 100%;
+    left: 0;
+    justify-content: center;
+    position: fixed;
+    transition: all .5s;
+    top: -200%;
+    width: 100%;
+    z-index: 1;
+}
+
+.mainModal {
+    background-color: white;
+    border-radius: 10px;
+    overflow: auto;
+    padding-bottom: 40px;
+    max-width: 600px;
+    width: 90%;
+}
+
+.mainModal input {
+    margin-bottom: 40px;
+    max-width: 300px;
+    text-align: left;
+    padding-left: .5em;
+    width: 70%;
+}
+
+.mainModal span {
+    color: #353752;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    float: right;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.miniBoton {
+    background: none;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    color: #353752;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 10px;
+    padding: 0;
+    text-transform: initial;
+    width: auto;
+}
+
+.mainModal h3 {
+    text-transform: uppercase;
+}
+
+.mainModal input {
+    border-radius: 10px;
+    border: solid 2px rgb(165 165 165);
+    font-size: 1.3em;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding: .5em;
 }
