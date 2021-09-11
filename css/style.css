@@ -275,3 +275,40 @@ footer img {
     margin-top: 15px;
     padding: .5em;
 }
+.inte {
+    display: inline-block;
+    max-width: 350px;
+    padding: 40px 40px;
+    vertical-align: top;
+}
+.inte img, .inte p, .inte p span {
+    display: block;
+}
+.inte img {
+    border-radius: 50%;
+    max-width: 175px;
+}
+.inte p {
+    padding: 5px;
+    padding-top: 20px;
+    font-weight: 200;
+    font-size: 18px;
+}
+.inte p span {
+    margin: 10px auto;
+    text-transform: uppercase;
+}
+.nosotros h2 {
+    color:#353752;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: 30px 30px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.nosotros h2 span {
+    font-size: 20px;
+    font-weight: 600;
+}
