@@ -2,10 +2,12 @@ body {
     color: #353752;
     font-family: 'DM Serif Display', serif;
     margin: 0;
+    min-width: 300px;
     text-align: center;
 }
 
-a, button {
+a,
+button {
     background: none;
     color: #353752;
     cursor: pointer;
@@ -17,7 +19,8 @@ a, button {
     transition: all 0.5s;
 }
 
-a:hover, button:hover {
+a:hover,
+button:hover {
     color: #8588ab;
 }
 
@@ -43,7 +46,9 @@ nav button {
     box-shadow: 0 0 10px 0px rgb(183 185 210);
 }
 
-.alinear, form li, .genero div {
+.alinear,
+form li,
+.genero div {
     display: inline-block;
     vertical-align: middle;
 }
@@ -58,7 +63,8 @@ nav button {
     text-align-last: justify;
 }
 
-.cajas, article {
+.cajas,
+article {
     background-image: url(../img/fondo_vecotr_amarillo.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,10 +81,14 @@ nav button {
     width: 80%;
 }
 
+form ul {
+    padding-left: 0;
+}
+
 .flotante {
     max-width: 500px;
     position: absolute;
-    right: 150px;
+    right: 10%;
     top: 150px;
 }
 
@@ -88,7 +98,9 @@ nav button {
     padding: 4em 2em;
 }
 
-h1, h2, .conprom a {
+h1,
+h2,
+.conprom a {
     display: block;
     text-align: left;
 }
@@ -99,15 +111,17 @@ h1 {
     line-height: 1.2em;
 }
 
-h2, h3 {
+h2,
+h3 {
     color: #ffb300;
-    font-family: 'Sue Ellen Francisco',handwriting;
+    font-family: 'Sue Ellen Francisco', handwriting;
     font-size: 40px;
     margin-bottom: 1em;
 }
 
-h1, h2 {
-    max-width: 70%;
+h1,
+h2 {
+    width: 70%;
 }
 
 .conprom a {
@@ -224,6 +238,7 @@ footer img {
     border-radius: 10px;
     overflow: auto;
     padding-bottom: 40px;
+    max-height: 80%;
     max-width: 600px;
     width: 90%;
 }
@@ -275,31 +290,37 @@ footer img {
     margin-top: 15px;
     padding: .5em;
 }
+
 .inte {
     display: inline-block;
     max-width: 350px;
     padding: 40px 40px;
     vertical-align: top;
 }
+
 .inte img, .inte p, .inte p span {
     display: block;
 }
+
 .inte img {
     border-radius: 50%;
     max-width: 175px;
 }
+
 .inte p {
     padding: 5px;
     padding-top: 20px;
     font-weight: 200;
     font-size: 18px;
 }
+
 .inte p span {
     margin: 10px auto;
     text-transform: uppercase;
 }
+
 .nosotros h2 {
-    color:#353752;
+    color: #353752;
     font-style: italic;
     font-size: 30px;
     font-weight: 400;
@@ -308,7 +329,101 @@ footer img {
     padding-bottom: 70px;
     text-align: center;
 }
+
 .nosotros h2 span {
     font-size: 20px;
     font-weight: 600;
+}
+
+
+.resultado {
+    margin-left: auto;
+    margin-top: 75px;
+    margin-right: auto;
+    max-width: 1200px;
+    width: 80%;
+}
+
+.resulinter {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* width: 100%; */
+}
+
+.resulinter div {
+    font-family: 'Poppins';
+    text-transform: capitalize;
+    width: 20%;
+}
+
+h5, h6 {
+    font-size: 14px;
+}
+
+h5 span, h6 span {
+    font-weight: 500;
+}
+
+.comenimc {
+    background-color: #ffb300;
+    border-radius: 10px;
+    color: white;
+    max-width: 120px;
+}
+
+.comenimc h5 {
+    margin: 10px auto;
+}
+
+.triangulo {
+    width: 0 !important;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #ffb300;
+    margin: 0 auto;
+    margin-bottom: -10px;
+}
+
+@media screen and (max-width: 1000px){
+    .flotante {
+        max-width: 300px;
+        right: 5%;
+        top: 200px;
+    }
+}
+
+@media screen and (max-width: 830px){
+    nav.alinear {
+        display: flex;
+        position: absolute;
+        top: 0;
+        transition: all .5s;
+        right: 0;
+    }
+    nav li.alinear {
+        display: block;
+        margin-left: 0px;
+    }
+    .resultado {
+        min-width: 665px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    h1, h2 {
+        width: 100%;
+    }
+    .flotante {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .contenedor {
+        width: 90%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
