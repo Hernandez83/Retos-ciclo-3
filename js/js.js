@@ -1,3 +1,12 @@
+function mover() {
+    document.getElementsByClassName('contenedor')[0].getElementsByTagName('a')[0].addEventListener('click', function(event){
+        event.preventDefault();
+        document.getElementsByClassName('contenedor')[1].scrollIntoView({behavior:"smooth"});
+        mover();
+    })
+}
+mover();
+
 function cerrar() {
     document.getElementById('inisesion').style.top = '-200%';
     document.getElementById('registrar').style.top = '-200%';
@@ -10,6 +19,20 @@ function calcularimc(altura, peso) {
     return imc;
 }
 
+function menu() {
+    for (let i = 0; i < 4; i++) {
+        document.getElementsByClassName('icomenu')[i].addEventListener('click', function(){
+            if (i == 1) {
+                document.getElementsByClassName('alinear')[1].style.display = 'block';
+                document.getElementsByClassName('alinear')[1].style.top = 0;
+                document.getElementsByClassName('alinear')[2].style.textAlign = 'right';
+            } else if(i == 3) {
+                document.getElementsByClassName('alinear')[1].style.top = '-150%';
+            }
+        })
+    }
+}
+menu();
 
 document.getElementById('login').addEventListener('click', function(){
     document.getElementById('inisesion').style.top = 0;
@@ -57,13 +80,16 @@ repetirgenero();
 function botonenviar() {
     document.getElementById('Calcular').addEventListener('click', function(event){
         event.preventDefault();
-        document.getElementsByTagName('article')[0].getElementsByClassName("resultado")[0].remove();
         anos = document.getElementById('anos').value;
         altura = document.getElementById('mides').value;
         peso = document.getElementById('pesas').value;
         if (selecgenero != 'hombre' && selecgenero != 'mujer' || anos == '' || altura == '' || peso == '') {
-            alert('Faltan datos')
+            document.getElementsByClassName('validacion')[0].style.display = 'block';
+            setTimeout(() => {
+                document.getElementsByClassName('validacion')[0].style.display = 'none';
+            }, 4000);
         }else{
+            document.getElementsByTagName('article')[0].getElementsByClassName("resultado")[0].remove();
             calcularimc(altura, peso)
             document.getElementsByTagName('article')[0].innerHTML += `<div class="resultado">
                 <h3>Tu estado actual es</h3>
@@ -142,6 +168,7 @@ function botonenviar() {
                 }
                 document.getElementsByClassName('resulinter')[1].getElementsByTagName('div')[i].style.borderBottom = 'solid 8px ' + a;
             }
+            document.getElementsByClassName('resultado')[0].scrollIntoView({behavior:"smooth"});
         }
         repetirgenero();
         botonenviar();

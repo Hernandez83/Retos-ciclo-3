@@ -58,9 +58,11 @@ form li,
 }
 
 .menu {
+    align-items: center;
     box-shadow: 0 0 20px 0px rgb(183, 185, 210);
+    display: flex;
+    justify-content: space-between;
     padding: 1em 3em;
-    text-align-last: justify;
 }
 
 .cajas,
@@ -386,25 +388,52 @@ h5 span, h6 span {
     margin-bottom: -10px;
 }
 
+.validacion {
+    color: red;
+    display: none;
+    transition: all .5s;
+}
+
+.icomenu {
+    cursor: pointer;
+    display: none;
+}
+
 @media screen and (max-width: 1000px){
     .flotante {
         max-width: 300px;
         right: 5%;
         top: 200px;
     }
+    h1 {
+        font-size: 60px;
+    }
 }
 
-@media screen and (max-width: 830px){
+@media screen and (max-width: 855px){
     nav.alinear {
-        display: flex;
+        background-color: white;
+        display: block;
+        height: 100vh;
         position: absolute;
-        top: 0;
+        top: -150%;
         transition: all .5s;
         right: 0;
+        z-index: 1;
+    }
+    nav.alinear ul{
+        padding-left: 30px;
+        padding-right: 30px;
     }
     nav li.alinear {
         display: block;
         margin-left: 0px;
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    .icomenu {
+        display: initial;
     }
     .resultado {
         min-width: 665px;
@@ -413,10 +442,18 @@ h5 span, h6 span {
 
 @media screen and (max-width: 650px){
     h1, h2 {
+        text-align: center;
         width: 100%;
+    }
+    .conprom a {
+        margin-left: auto;
+        margin-right: auto;
     }
     .flotante {
         display: none;
+    }
+    h1 {
+        font-size: 50px;
     }
 }
 
@@ -425,5 +462,14 @@ h5 span, h6 span {
         width: 90%;
         padding-left: 10px;
         padding-right: 10px;
+    }
+    form li {
+        padding: 1em;
+    }
+    .circulos {
+        margin: -30px auto 0;
+    }
+    form h4 {
+        margin: 10px auto;
     }
 }
