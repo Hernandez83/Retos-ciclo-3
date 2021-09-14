@@ -5,7 +5,7 @@ function mover() {
         mover();
     })
 }
-mover();
+/* mover(); */
 
 function cerrar() {
     document.getElementById('inisesion').style.top = '-200%';
@@ -74,7 +74,7 @@ function repetirgenero() {
         })
     }
 }
-repetirgenero();
+/* repetirgenero(); */
 
 
 function botonenviar() {
@@ -174,4 +174,4 @@ function botonenviar() {
         botonenviar();
     })
 }
-botonenviar();
+/* botonenviar(); */

@@ -17,8 +17,16 @@
     <header>
         <div class="menu">
             <img class="alinear" src="img/logo.png" alt="Logo" title="Logo">
+            <a class="icomenu">
+                <svg class="icomenu" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+            </a>
             <nav class="alinear">
                 <ul>
+                    <li class="alinear">
+                        <a class="icomenu">
+                            <svg class="icomenu" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+                        </a>
+                    </li>
                     <li class="alinear margeniz">
                         <a href="/">Inicio</a>
                     </li>
@@ -44,6 +52,20 @@
                     <button type="submit">Iniciar</button>
                     <button class="miniBoton" id="recucontra">Olvide mi contraseña</button>
                     <button class="miniBoton" id="pascrear">Crear cuenta</button>
+                </form>
+            </div>
+        </div>
+        <div class="bgModal" id="registrar">
+            <div class="mainModal">
+                <span class="cerrar">X</span><br>
+                <form>
+                    <h3>Crear Cuenta</h3>
+                    <input type="text" name="nombre" required placeholder="Nombre">
+                    <input type="email" name="email" required placeholder="Correo">
+                    <input type="password" name="confirmarcontraseña" required placeholder="Contraseña">
+                    <input type="password" name="confirmarcontraseña" required placeholder="Confirmar">
+                    <button type="submit">Crear</button>
+                    <button class="miniBoton" id="pasloging">Inicia sesión</button>
                 </form>
             </div>
         </div>
@@ -88,6 +110,7 @@
             <img src="https://www.unab.edu.co/sites/default/files/1-LOGO-WEB_0.png" alt="unab" title="unab">
         </div>
     </footer>
+    <script src="js/js.js"></script>
 </body>
 
 </html>
