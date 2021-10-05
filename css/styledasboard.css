@@ -1,0 +1,270 @@
+/*
+Para cambiar a la vercion Dark estos elementos cambiaran con Js
+
+Body = Cambiar clase a .Dark
+.icomenu = cambiar la clase .icomenudark
+.contenlight = cambiar la clase .contendark
+*/
+
+body {
+    margin: 0;
+    min-width: 350px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Inicio light/dark*/
+.dark {
+    background-color: #1e1e2f;
+    color: white;
+}
+
+.light {
+    background-color: #f5f6fa;
+    color: #1e1e2f;
+}
+
+.icomenu {
+    filter: none;
+}
+
+.icomenudark {
+    filter: invert(1);
+}
+
+.contenlight {
+    background-color: white;
+}
+
+.contendark {
+    background-color: #27293d;
+}
+/*Final light/dark*/
+
+/*Inicio Generales*/
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.orden, .fordata {
+    display: inline-block;
+    vertical-align: top;
+}
+/*Final Generales*/
+
+/*Inicio Cabecera*/
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-height: 65px;
+    padding: 7px 0;
+    padding-left:  40px;
+}
+
+header img {
+    max-width: 120px;
+    min-width: 30px;
+}
+
+header a {
+    padding: 10px 5px;
+}
+
+/*Fin Cabecera*/
+
+/*Inicio de la seccion principal*/
+section {
+    padding-top: 20px;
+    display: flex;
+}
+/*Fin de la seccion principal*/
+
+/*Inicio Navegacion izquierda*/
+nav {
+    background-color: #ffb300;
+    border-radius: 5px;
+    box-sizing: border-box;
+    flex-basis: 100%;
+    max-width: 230px;
+    padding: 12px;
+    transition: ease-in .3s;
+}
+
+nav, nav a {
+    color: white;
+}
+
+nav a {
+    transition: ease-in .3s;
+}
+
+nav a:hover {
+    color: rgb(230, 230, 230);
+    transition: ease-in .3s;
+}
+
+nav img, nav h2, nav p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav img {
+    margin-left: 10px;
+    margin-right: 15px;
+    max-width: 50px;
+}
+
+hr {
+    border-style: solid;
+    border-color: white;
+}
+
+.icomenumovil {
+    display: none;
+}
+/*Fin Navegacion izquierda*/
+
+/*Inicio Contenido*/
+.contenlight, .contendark {
+    border-radius: 5px;
+    padding: 15px;
+}
+article {
+    display: flex;
+}
+.contendash {
+    margin: 0 15px;
+}
+
+section {
+    min-height: 76vh;
+}
+/*Final Contenido*/
+
+/*Inicio Formulario de edicion del perfil*/
+.fordata {
+    width: 49%;
+}
+
+.fordata label {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.fordata input, textarea {
+    background: rgba(0, 0, 0, 0.05);
+    border: solid 1px #2b3553;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 8px 15px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.textarea {
+    width: 100%;
+}
+
+#fecha {
+    padding-top: 6px;
+    padding-bottom: 5px;
+}
+
+button {
+    background-image: linear-gradient(to bottom left, #ffde90, #ffcc53, #ffb300);
+    background-size: 210% 210%;
+    background-position: 100% 0;
+    background-color: #ffb300;
+    border: none;
+    border-radius: 5px;
+    color: #ffff;
+    padding: 11px 40px;
+}
+/*Fin Formulario de edicion del perfil*/
+
+/*Inicio Trajeta usuario*/
+.targetauser {
+    text-align: center;
+    width: 250px;
+}
+
+.targetauser img {
+    border-radius: 50%;
+    margin-top: 15px;
+    max-width: 150px;
+}
+
+.targetauser p {
+    text-align: justify;
+}
+/*Inicio Trajeta usuario*/
+
+/*Inicio Footer*/
+footer {
+    border-radius: 5px;
+    margin: 15px auto;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+footer img {
+    width: 100px;
+}
+/*Fin Footer*/
+
+@media screen and (max-width: 1400px){
+    .fordata input {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 950px){
+    nav {
+        left: -300px;
+        position: absolute;
+        top: 65px;
+        width: 250px;
+    }
+    .icomenumovil {
+        display: initial;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .fordata {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 650px){
+    header {
+        padding-left: 0;
+    }
+    .targetauser {
+        width: 100%;
+    }
+    .fordata input {
+        width: 90%;
+    }
+    article {
+        display: block;
+    }
+    section {
+        padding-top: 0;
+    }
+    .contendark {
+        margin-top: 20px;
+    }
+}

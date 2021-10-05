@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styledasboard.css">
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body class="light">
+    <header>
+        <a href="" class="icomenumovil"><img src="img/menu.svg" alt="" title=""></a>
+        <a href="/dashboard.html"><img src="img/logo.png" alt="" title=""></a>
+        <div>
+            <a href="" id="light_dark">
+                <img class="icomenu" src="img/circle-half-stroke.svg" alt="" title="">
+            </a>
+            <a href="">
+                <img class="icomenu" src="img/notifications.svg" alt="" title="">
+            </a>
+            <a href="">
+                <img class="icomenu" src="img/user.svg" alt="" title="">
+            </a>
+        </div>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li>
+                    <img src="img/logominiblanco.svg" alt="" title="">
+                    <h2>Dashboard</h2>
+                </li>
+                <hr>
+                <li>
+                    <a href="#"><img src="img/dashboard.svg" alt="" title="">
+                        <p> Dashboard</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/edit.svg" alt="" title="">
+                        <p> Editar Perfil</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/history.svg" alt="" title="">
+                        <p> Historial</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/logout.svg" alt="" title="">
+                        <p> Salir</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <article>
+            <div class="contendash">
+                <div class="contenlight">
+                    <form action=""  class="formeditperfil">
+                        <h2>Editar Perfil</h2>
+                        <div class="fordata">
+                            <label for="nombre">Nombre</label><br>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Nombre" />
+                        </div>
+                        <div class="fordata">
+                            <label for="">Apellido</label><br>
+                            <input type="text" id="apellido" name="apellido" required placeholder="Apellido" />
+                        </div>
+                        <div class="fordata">
+                            <label for="">Email</label><br>
+                            <input type="email" id="email" name="email" required placeholder="Email" />
+                        </div>
+                        <div class="fordata">
+                            <label for="">Dirección</label><br>
+                            <input type="text" id="direccion" name="direccion" required placeholder="Direccion" />
+                        </div>
+                        <div class="fordata">
+                            <label for="">Ciudad</label><br>
+                            <input  type="text" id="ciudad" name="ciudad" required placeholder="Ciudad"/>
+                        </div>
+                        <div class="fordata">
+                            <label for="">Fecha de nacimiento</label><br>
+                            <input type="date" id="fecha" name="fecha" required placeholder="Fecha de nacimiento" />
+                        </div>
+                        <div class="fordata textarea">
+                            <label for="mi">Sobre Mí</label><br>
+                            <textarea name="mi" rows="2"></textarea>
+                        </div>
+                        <div class="fordata">
+                            <button>Guardar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="contenlight">
+                <div class="targetauser">
+                    <img src="img/juan.png" alt="" title="">
+                    <h3>Juan Algo<br><span>Estudiante</span></h3>
+                    <p>Descripcion Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, libero pariatur accusamus aliquid iure voluptatibus velit recusandae consectetur quidem assumenda sapiente doloribus ab vitae esse maxime voluptas beatae similique eos.</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer class="contenlight">
+        <img src="https://www.utp.edu.co/cms-utp/data/bin/UTP/web/uploads/media/comunicaciones/img/Logo-MisionTIC-2022.jpg" alt="Mision TIC 2022" title="Mision TIC 2022">
+            <img class="logopyeye" src="img/logo_negro_grupo_1_sin_fondo.png" alt="" title="">
+            <img src="https://www.unab.edu.co/sites/default/files/1-LOGO-WEB_0.png" alt="unab" title="unab">
+    </footer>
+    <script src="js/jsdash.js"></script>
+</body>
+
+</html>

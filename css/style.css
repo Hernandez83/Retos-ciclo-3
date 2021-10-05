@@ -63,6 +63,11 @@ form li,
     display: flex;
     justify-content: space-between;
     padding: 1em 3em;
+    /* position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    background: white;
+    z-index: 1; */
 }
 
 .cajas,
